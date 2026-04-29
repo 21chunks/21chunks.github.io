@@ -1,163 +1,440 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>21 Chunks</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Chunks - Refining Kid Potential!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FFD93D;
+            --secondary: #6BCB77;
+            --accent: #4D96FF;g
+            --highlight: #FF6B6B;
+            --dark: #2B2B2B;
+        }
 
-		<!-- Header -->
-			<header id="header">
-				<div class="logo"><a href="#">21 Chunks <span>(PTY) LTD</span></a></div>
-			</header>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f0f7ff;
+            overflow-x: hidden;
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
 
-		<!-- Main -->
-			<section id="main">
-				<div class="inner">
+        h1, h2, h3 {
+            font-family: 'Fredoka One', cursive;
+        }
 
-				<!-- One -->
-					<section id="one" class="wrapper style1">
+        .chunk-card {
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            border-bottom: 8px solid rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
 
-						<div class="image fit flush">
-							<img src="images/top-banner.jpg" alt="" />
-						</div>
-						<header class="special">
-							<h2>Who are we?</h2>
-							<p>SMILE AND SAY PAPADI </p>
-						</header>
-						<div class="content">
-							<p>21 Chunks is a supplementary Edutainment programme providing Play-centred learning activities, Broadcasted educational programmes and Tutoring services. We provide support to Schools, Teachers, Parents and Home-based learning. Our drive is to assist the wholistic development of Children. We propel the process of building the next generation of Greats by providing fun “Learn through Play” programmes.</p>
-							<p>At 21 Chunks you find: Puppet shows, Games (Modern and Indigenous) , Music and movement, Crafts and many more. Our activities are always supplementary in nature and because of this, all content and activities are fully based on your preferred Curriculum/Programme.</p>
-							<p>Helping schools and parents mould future leaders is the wind beneath our wings. We ensure the very best for our littles. Safety is always at the forefront and a fully consultative process with guardians is one of our top priorities. A Fun environment is ensured throughout all our operations.</p>
-						</div>
-					</section>
+        .chunk-card:hover {
+            transform: translateY(-10px) rotate(1deg);
+            border-bottom-width: 12px;
+        }
 
-				<!-- Two --
-					<section id="two" class="wrapper style2">
-						<header>
-							<h2>Our Past Activities</h2>
-							<p>The fun we have had</p>
-						</header>
-						<div class="content">
-							<div class="gallery">
-								<div>
-									<div class="image fit flush">
-										<a href="images/pro4.jpg"><img src="images/pro4.jpg" alt="" /></a>
-									</div>
-								</div>
-								<div>
-									<div class="image fit flush">
-										<a href="images/pro2.jpg"><img src="images/pro2.jpg" alt="" /></a>
-									</div>
-								</div>
-								<div>
-									<div class="image fit flush">
-										<a href="images/pro3.jpg"><img src="images/pro3.jpg" alt="" /></a>
-									</div>
-								</div>
-								<div>
-									<div class="image fit flush">
-										<a href="images/pro1.jpg"><img src="images/pro1.jpg" alt="" /></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
 
-				<!-- Three -->
-					<section id="three" class="wrapper">
-						<div class="spotlight alt2">
-							<div class="image flush"><img src="images/pic_care.jpg" alt="" /></div>
-							<div class="inner">
-								<h3>Little Greats Learn</h3>
-								<p>Welcome to our innovative virtual tutoring service, where learning knows no bounds! We pride ourselves on offering personalized, one-on-one tutoring sessions that transcend geographical limitations, connecting kiddies with expert tutors based on their grade. Through cutting-edge virtual platforms, kids can access high-quality instruction in subjects ranging from mathematics to language development and test preparation, all from the comfort of their own homes. Our dedicated tutors utilize interactive tools, multimedia resources, and tailored lesson plans to cater to each child's unique learning style and academic goals. With flexible scheduling options and convenient access to top-tier facilitators, our virtual tutoring service empowers kids to excel academically and unlock their full potential, no matter where they are.	</p>
-								<a href="https://learn.21chunks.co.za" class="button alt" target="_blank">Go to Learn</a>
-							</div>
-						</div>
-						<div class="spotlight">
-							<div class="image flush"><img src="images/pic_edutainment.jpg" alt="" /></div>
-							<div  class="inner">
-								<h3>Papadi Park</h3>
-								<p>Papadi Park class visits make learning so much fun. We turn any curriculum into thee greatest and most exciting experience ever! We use dramatization, Games, Made up songs and many more “learn-through-play” methods.</p>
-								<a href="event.html" class="button special">Book a session for your school</a>
-							</div>
-						</div>
-						<div class="spotlight alt">
-							<div class="image flush"><img src="images/pic_play.jpg" alt="" /></div>
-							<div class="inner">
-								<h3>Papadi Park Pop-up Play</h3>
-								<p>Did someone say PLAY?</p> 
-								<p>Yes, ha re Bapaleng! Lets play! Papadi park Pop-up play centres are here!</p>
-								<p>Papadi park Pop-up play centres are fully mobile. Our play areas are filled with exciting activities. Papadi Park Pop-up play centres make any party a great success. We bring lots of fun to many events for children. Our Birthday party entertainment is structured to bring lots of fun for everyone. School events become extra fun when Papadi park is around.</p>
-								<a href="event.html" class="button">Book a show for an event</a>
-							</div>
-							</div>
-						</div>
-					</section>
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 15px); }
+            100% { transform: translate(0, -0px); }
+        }
 
-				</div>
-			</section>
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul class="icons">
-						<!--li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li-->
-						<li><a href="https://www.facebook.com/profile.php?id=100063807091548" class="fab fa-facebook" target="_blank"><!--span class="label">Facebook</span--></a></li>
-						<li><a href="https://www.instagram.com/papadi_park/" class="fab fa-instagram" target="_blank"><!--span class="label">Instagram</span--></a></li>
-						<li><a href="https://www.youtube.com/@papadipark3016" class="fab fa-youtube" target="_blank"><!--span class="label">YouTube</span--></a></li>
-						<li><a href="https://www.tiktok.com/@papadiparkpuppetry" class="fab fa-tiktok" target="_blank"><!--span class="label">TikTok</span--></a></li>
-						<li><a href="mailto:info@21chunks.co.za" class="fa fa-envelope"><!--span class="label">Email</span--></a></li>
-						<li><a href="https://wa.me/+27872659467?text=Hello%20can%20I%20get%20more%20information%20about%20your%20services" class="fab fa-whatsapp"><!--span class="label">WhatsApp</span--></a></li>
-					</ul>
-				</div>
-				<div class="copyright">
-					&copy; 2026. All rights reserved.
-				</div>
-			</footer>
+        .bg-pattern {
+            background-color: #f0f7ff;
+            background-image: radial-gradient(#4D96FF 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-<!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
-<call-us-selector phonesystem-url="https://1576.3cx.cloud" party="LiveChat928970"></call-us-selector>
- 
-<!--Incase you don't want real time updates to the live chat plugin when options are changed, use the below code snippet. Please note that each time you change the settings you will need to copy and paste the snippet code to your website--> 
-<!--<call-us 
-phonesystem-url="https://1576.3cx.cloud" 
-style="position:fixed;font-size:16px;line-height:17px;z-index: 99999;right: 20px; bottom: 20px;" 
-id="wp-live-chat-by-3CX" 
-minimized="true" 
-animation-style="noanimation" 
-party="LiveChat928970" 
-minimized-style="bubbleright" 
-allow-call="true" 
-allow-video="false" 
-allow-soundnotifications="true" 
-enable-mute="true" 
-enable-onmobile="true" 
-offline-enabled="true" 
-enable="true" 
-ignore-queueownership="false" 
-authentication="both" 
-show-operator-actual-name="true" 
-aknowledge-received="true" 
-gdpr-enabled="false" 
-message-userinfo-format="name" 
-message-dateformat="both" 
-lang="browser" 
-button-icon-type="bubble" 
-greeting-visibility="none" 
-greeting-offline-visibility="none" 
-chat-delay="2000" 
-enable-direct-call="true" 
-enable-ga="false" 
-></call-us>--> 
-<script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
-	</body>
+        .btn-pop {
+            transition: transform 0.1s active;
+            box-shadow: 0 6px 0 #b28e00;
+        }
+
+        .btn-pop:active {
+            transform: translateY(4px);
+            box-shadow: 0 2px 0 #b28e00;
+        }
+
+        #game-canvas {
+            background: white;
+            border: 4px solid var(--accent);
+            border-radius: 24px;
+            cursor: crosshair;
+            touch-action: none;
+        }
+
+        .event-tag {
+            @apply px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider;
+        }
+
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="bg-pattern min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto relative z-50">
+        <div class="flex items-center gap-3 cursor-pointer" onclick="showView('home')">
+            <div class="w-12 h-12 bg-yellow-400 rounded-xl rotate-12 flex items-center justify-center text-white text-2xl font-bold shadow-lg">21</div>
+            <span class="text-2xl font-bold tracking-tight text-blue-600">CHUNKS</span>
+        </div>
+        <div class="hidden md:flex gap-8 font-bold text-blue-500">
+            <a href="javascript:void(0)" onclick="showView('home'); scrollToId('about')" class="hover:text-yellow-500 transition-colors">About Us</a>
+            <a href="javascript:void(0)" onclick="showView('events')" class="hover:text-yellow-500 transition-colors">Events</a>
+            <a href="javascript:void(0)" onclick="showView('home'); scrollToId('lab')" class="hover:text-yellow-500 transition-colors">The Lab</a>
+        </div>
+        <button onclick="showView('home'); scrollToId('game')" class="bg-red-500 text-white px-6 py-2 rounded-full font-bold shadow-lg hover:bg-red-600 transition-all">Play Now!</button>
+    </nav>
+
+    <!-- Main Home View -->
+    <main id="home-view">
+        <!-- Hero Section -->
+        <header class="max-w-6xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <div class="inline-block bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm font-bold mb-4">
+                    🚀 REFINING POTENTIAL SINCE 2021
+                </div>
+                <h1 class="text-5xl md:text-7xl mb-6 leading-tight text-blue-900">
+                    Small Steps, <span class="text-yellow-500 underline decoration-wavy">Big Wins!</span>
+                </h1>
+                <p class="text-xl text-blue-700 mb-8 font-medium">
+                    At 21 Chunks, we believe every big goal is just a bunch of small "chunks" waiting to be mastered. Let's start refining yours!
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <button onclick="scrollToId('about')" class="bg-yellow-400 text-yellow-900 px-8 py-4 rounded-2xl font-bold text-xl btn-pop shadow-xl">Who We Are</button>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <div class="floating relative z-10">
+                    <img src="/images/top-banner.jpg" 
+                         alt="Happy Child Learning" 
+                         class="rounded-[40px] shadow-2xl border-8 border-white rotate-3 w-full max-w-md mx-auto">
+                </div>
+                <div class="absolute -top-10 -right-4 w-24 h-24 bg-blue-400 rounded-3xl -rotate-12 opacity-20 hidden md:block"></div>
+                <div class="absolute -bottom-10 -left-4 w-32 h-32 bg-yellow-400 rounded-full opacity-20 hidden md:block"></div>
+            </div>
+        </header>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-1/2">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-blue-100 p-6 rounded-3xl text-center">
+                                <span class="text-4xl block mb-2">🎭</span>
+                                <span class="font-bold text-blue-800">Puppet Shows</span>
+                            </div>
+                            <div class="bg-green-100 p-6 rounded-3xl text-center">
+                                <span class="text-4xl block mb-2">🎲</span>
+                                <span class="font-bold text-green-800">Games</span>
+                            </div>
+                            <div class="bg-yellow-100 p-6 rounded-3xl text-center">
+                                <span class="text-4xl block mb-2">🎵</span>
+                                <span class="font-bold text-yellow-800">Music</span>
+                            </div>
+                            <div class="bg-red-100 p-6 rounded-3xl text-center">
+                                <span class="text-4xl block mb-2">🎨</span>
+                                <span class="font-bold text-red-800">Crafts</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-4xl text-blue-900 mb-6">Our Story & Mission</h2>
+                        <div class="space-y-4 text-blue-700 leading-relaxed font-medium">
+                            <p>21 Chunks is a supplementary Edutainment programme providing Play-centred learning activities, Broadcasted educational programmes and Tutoring services.</p>
+                            <p>Our drive is to assist the wholistic development of Children. We propel the process of building the next generation of Greats by providing fun “Learn through Play” programmes.</p>
+                            <p class="bg-blue-50 p-4 rounded-2xl border-l-4 border-blue-400 italic">All content and activities are fully based on your preferred Curriculum/Programme.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Lab Section -->
+        <section id="lab" class="max-w-6xl mx-auto px-6 py-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl text-blue-900 mb-4">The Refiner Lab</h2>
+                <p class="text-blue-600">Where big goals become bite-sized fun.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="chunk-card bg-white rounded-3xl shadow-xl">
+                    <img src="/images/pic-care.jpg" class="h-48 w-full object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl mb-2 text-blue-900">Little Greats Learn</h3>
+                        <p class="text-gray-600">Innovative Tutoring Services for young minds.</p>
+                    </div>
+                </div>
+                <div class="chunk-card bg-white rounded-3xl shadow-xl">
+                    <img src="/images/pic-learn.jpg" class="h-48 w-full object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl mb-2 text-blue-900">Papadi Park</h3>
+                        <p class="text-gray-600">Learn through play with our puppet friends.</p>
+                    </div>
+                </div>
+                <div class="chunk-card bg-white rounded-3xl shadow-xl">
+                    <img src="/images/pic-play.jpg" class="h-48 w-full object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl mb-2 text-blue-900">Papadi Park Pop-up Play</h3>
+                        <p class="text-gray-600">Growing together in Bloemfontein.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Teaser -->
+        <section id="gallery" class="py-20 bg-blue-900 text-white">
+            <div class="max-w-6xl mx-auto px-6 text-center">
+                <h2 class="text-4xl mb-12">Chunks in Action</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-white p-8 rounded-[40px] shadow-xl border-t-8 border-yellow-400 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-6 opacity-10 text-8xl">🎭</div>
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="event-tag bg-yellow-100 text-yellow-700">Puppet Show</span>
+                        <span class="font-bold text-blue-500">May 15, 2024</span>
+                    </div>
+                    <h3 class="text-3xl mb-4 text-blue-900">The Magic Refiner</h3>
+                    <p class="text-gray-600 mb-8 font-medium">Join us for a magical puppet adventure where we learn how to break big problems into small, happy chunks!</p>
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-2xl font-bold hover:bg-blue-700 w-full transition-all">Book Your Spot</button>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="bg-white p-8 rounded-[40px] shadow-xl border-t-8 border-green-400 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-6 opacity-10 text-8xl">💻</div>
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="event-tag bg-green-100 text-green-700">Tech Day</span>
+                        <span class="font-bold text-blue-500">May 22, 2024</span>
+                    </div>
+                    <h3 class="text-3xl mb-4 text-blue-900">Kids Who Code</h3>
+                    <p class="text-gray-600 mb-8 font-medium">A hands-on workshop for little engineers. Build your first app using the 21 Chunks method!</p>
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-2xl font-bold hover:bg-blue-700 w-full transition-all">Book Your Spot</button>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="bg-white p-8 rounded-[40px] shadow-xl border-t-8 border-orange-400 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-6 opacity-10 text-8xl">🎲</div>
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="event-tag bg-orange-100 text-orange-700">Games Day</span>
+                        <span class="font-bold text-blue-500">June 05, 2024</span>
+                    </div>
+                    <h3 class="text-3xl mb-4 text-blue-900">Indigenous Games Festival</h3>
+                    <p class="text-gray-600 mb-8 font-medium">Celebrating our heritage through movement! Learn traditional South African games and make new friends.</p>
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-2xl font-bold hover:bg-blue-700 w-full transition-all">Book Your Spot</button>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="bg-white p-8 rounded-[40px] shadow-xl border-t-8 border-red-400 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-6 opacity-10 text-8xl">🎨</div>
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="event-tag bg-red-100 text-red-700">Workshop</span>
+                        <span class="font-bold text-blue-500">June 12, 2024</span>
+                    </div>
+                    <h3 class="text-3xl mb-4 text-blue-900">Crafty Leaders</h3>
+                    <p class="text-gray-600 mb-8 font-medium">Creating art while building leadership skills. This workshop is perfect for the whole family!</p>
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-2xl font-bold hover:bg-blue-700 w-full transition-all">Book Your Spot</button>
+                </div>
+            </div>
+            
+            <div class="mt-20 text-center bg-blue-50 p-12 rounded-[40px]">
+                <h2 class="text-3xl text-blue-900 mb-4">Hosting a School Event?</h2>
+                <p class="text-blue-700 mb-8 font-bold">We bring the fun to you! Our programs are fully based on your preferred curriculum.</p>
+		<button onclick="showView('events')" class="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-2xl font-bold text-xl hover:bg-blue-50 transition-all">Book Event</button>
+            </div>
+        </section>
+
+        <!-- Game Section -->
+        <section id="game" class="py-24 px-6 bg-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl text-blue-900 mb-2">Chunk Catcher</h2>
+                <p class="text-blue-500 font-bold mb-8">Refine your potential by catching the chunks!</p>
+                <div class="flex justify-center gap-12 mb-8">
+                    <div class="bg-blue-50 p-4 rounded-2xl min-w-[120px]">
+                        <div class="text-blue-400 text-sm uppercase font-bold">Time</div>
+                        <div class="text-3xl font-black text-blue-900"><span id="game-timer">30</span>s</div>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-2xl min-w-[120px]">
+                        <div class="text-yellow-600 text-sm uppercase font-bold">Score</div>
+                        <div class="text-3xl font-black text-yellow-600"><span id="game-score">0</span></div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <canvas id="game-canvas" class="w-full h-[450px] shadow-2xl"></canvas>
+                    <div id="game-overlay" class="absolute inset-0 flex flex-col items-center justify-center bg-blue-900/90 rounded-[24px]">
+                        <button id="start-btn" class="bg-yellow-400 text-yellow-900 px-12 py-5 rounded-2xl font-bold text-2xl btn-pop">Start Refining!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Events View -->
+    <main id="events-view" class="hidden py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-12">
+                <button onclick="showView('home')" class="bg-blue-100 text-blue-600 p-3 rounded-full hover:bg-blue-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <h1 class="text-5xl text-blue-900">Hosting a School Event?</h1>
+            </div>
+            
+            <div class="mt-20 text-center bg-blue-50 p-12 rounded-[40px]">
+		<div class="calendly-inline-widget" data-url="https://calendly.com/21chunks/puppet-show" style="min-width:320px;height:700px;"></div>
+		<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </div>
+        </div>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="pb-12 pt-12 text-center text-blue-400 font-bold border-t border-blue-100 mt-12 bg-white">
+        <div class="flex justify-center gap-6 mb-4">
+            <span class="hover:text-blue-600 cursor-pointer">Facebook</span>
+            <span class="hover:text-blue-600 cursor-pointer">LinkedIn</span>
+            <span class="hover:text-blue-600 cursor-pointer">Instagram</span>
+        </div>
+        <p>© 2024 21 Chunks (Pty) Ltd - Refining Potential, One Event at a Time.</p>
+    </footer>
+
+    <script>
+        // View Navigation Logic
+        function showView(viewId) {
+            const home = document.getElementById('home-view');
+            const events = document.getElementById('events-view');
+            
+            if (viewId === 'home') {
+                home.classList.remove('hidden');
+                events.classList.add('hidden');
+                window.scrollTo(0, 0);
+            } else {
+                home.classList.add('hidden');
+                events.classList.remove('hidden');
+                window.scrollTo(0, 0);
+            }
+        }
+
+        function scrollToId(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Game Logic
+        const canvas = document.getElementById('game-canvas');
+        const ctx = canvas.getContext('2d');
+        const startBtn = document.getElementById('start-btn');
+        const overlay = document.getElementById('game-overlay');
+        const scoreEl = document.getElementById('game-score');
+        const timerEl = document.getElementById('game-timer');
+
+        let score = 0;
+        let timeLeft = 30;
+        let isPlaying = false;
+        let chunks = [];
+        let animationId;
+
+        function resize() {
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        class Chunk {
+            constructor() {
+                this.x = Math.random() * (canvas.width - 60) + 30;
+                this.y = -50;
+                this.size = Math.random() * 40 + 30;
+                this.speed = Math.random() * 2 + 2;
+                this.color = ['#FFD93D', '#6BCB77', '#4D96FF', '#FF6B6B'][Math.floor(Math.random() * 4)];
+                this.rotation = Math.random() * Math.PI * 2;
+                this.rotSpeed = (Math.random() - 0.5) * 0.05;
+                this.type = Math.random() > 0.8 ? 'bonus' : 'normal';
+            }
+            update() {
+                this.y += this.speed;
+                this.rotation += this.rotSpeed;
+            }
+            draw() {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.rotation);
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.roundRect(-this.size/2, -this.size/2, this.size, this.size, 12);
+                ctx.fill();
+                ctx.fillStyle = 'rgba(255,255,255,0.8)';
+                ctx.beginPath();
+                ctx.arc(-this.size/4, -this.size/8, this.size/10, 0, Math.PI*2);
+                ctx.arc(this.size/4, -this.size/8, this.size/10, 0, Math.PI*2);
+                ctx.fill();
+                ctx.restore();
+            }
+        }
+
+        function updateGame() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            if (isPlaying && Math.random() < 0.04) chunks.push(new Chunk());
+            for (let i = chunks.length - 1; i >= 0; i--) {
+                chunks[i].update();
+                chunks[i].draw();
+                if (chunks[i].y > canvas.height + 50) chunks.splice(i, 1);
+            }
+            if (isPlaying) animationId = requestAnimationFrame(updateGame);
+        }
+
+        function startGame() {
+            isPlaying = true;
+            score = 0;
+            timeLeft = 30;
+            chunks = [];
+            scoreEl.textContent = score;
+            timerEl.textContent = timeLeft;
+            overlay.style.display = 'none';
+            const timerInterval = setInterval(() => {
+                timeLeft--;
+                timerEl.textContent = timeLeft;
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    isPlaying = false;
+                    cancelAnimationFrame(animationId);
+                    overlay.style.display = 'flex';
+                    startBtn.innerHTML = `Nice! Score: ${score}<br>Play Again?`;
+                }
+            }, 1000);
+            updateGame();
+        }
+
+        function handleClick(e) {
+            if (!isPlaying) return;
+            const rect = canvas.getBoundingClientRect();
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+            const x = clientX - rect.left;
+            const y = clientY - rect.top;
+            for (let i = chunks.length - 1; i >= 0; i--) {
+                const c = chunks[i];
+                if (Math.hypot(c.x - x, c.y - y) < c.size) {
+                    score += c.type === 'bonus' ? 50 : 10;
+                    chunks.splice(i, 1);
+                    scoreEl.textContent = score;
+                    return;
+                }
+            }
+        }
+
+        canvas.addEventListener('mousedown', handleClick);
+        canvas.addEventListener('touchstart', (e) => { e.preventDefault(); handleClick(e); });
+        startBtn.addEventListener('click', startGame);
+    </script>
+</body>
 </html>
