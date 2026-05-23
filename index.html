@@ -106,7 +106,7 @@
                     🚀 REFINING POTENTIAL SINCE 2019
                 </div>
                 <h1 class="text-5xl md:text-7xl mb-6 leading-tight text-blue-900">
-                    Small Steps, <span class="text-yellow-500 underline decoration-wavy">Big Wins!</span>
+                    Small Steps, <span class="text-yellow-500">Big Wins!</span>
                 </h1>
                 <p class="text-xl text-blue-700 mb-8 font-medium">
                     At 21 Chunks, we believe every big goal is a collection of small, powerful steps. Great stories are told one moment at a time. We help you build and bring yours to life, one chunk at a time.
@@ -166,32 +166,47 @@
         <section id="lab" class="max-w-6xl mx-auto px-6 py-20">
             <div class="text-center mb-16">
                 <h2 class="text-4xl text-blue-900 mb-4">The Refiner Lab</h2>
-                <p class="text-blue-600">Where big goals become bite-sized fun.</p>
+                <p class="text-blue-600">Where big goals become bite-sized fun. <span class="text-blue-400 text-sm">(Tap a card to learn more!)</span></p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="chunk-card bg-white rounded-3xl shadow-xl">
-                    <img src="/images/pic-care.jpg" class="h-48 w-full object-cover">
+                <div class="chunk-card bg-white rounded-3xl shadow-xl" >
+                    <img src="/images/pic-care.png" class="h-48 w-full object-cover">
                     <div class="p-8">
                         <h3 class="text-2xl mb-2 text-blue-900">Papadi Park Puppet Shows</h3>
                         <p class="text-gray-600">Learn through play with our puppet friends.</p>
+                        <span class="inline-block mt-4 text-blue-500 font-bold text-sm">Learn more →</span>
                     </div>
                 </div>
-                <div class="chunk-card bg-white rounded-3xl shadow-xl">
-                    <img src="/images/pic-learn.jpg" class="h-48 w-full object-cover">
+                <div class="chunk-card bg-white rounded-3xl shadow-xl" >
+                    <img src="/images/pic-learn.png" class="h-48 w-full object-cover">
                     <div class="p-8">
                         <h3 class="text-2xl mb-2 text-blue-900">Papadi Park Pocket Class</h3>
                         <p class="text-gray-600">Innovative Tutoring Services for young minds.</p>
+                        <span class="inline-block mt-4 text-blue-500 font-bold text-sm">Learn more →</span>
                     </div>
                 </div>
-                <div class="chunk-card bg-white rounded-3xl shadow-xl">
-                    <img src="/images/pic-play.jpg" class="h-48 w-full object-cover">
+                <div class="chunk-card bg-white rounded-3xl shadow-xl" >
+                    <img src="/images/pic-play.png" class="h-48 w-full object-cover">
                     <div class="p-8">
                         <h3 class="text-2xl mb-2 text-blue-900">Papadi Park Reading Club</h3>
                         <p class="text-gray-600">Helping learners strengthen their reading in a fun and supportive environment.</p>
+                        <span class="inline-block mt-4 text-blue-500 font-bold text-sm">Learn more →</span>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Lab Modal -->
+        <div id="lab-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4" style="background:rgba(0,0,0,0.5);">
+            <div class="bg-white rounded-[40px] shadow-2xl max-w-lg w-full p-10 relative animate-bounce-in">
+                <button onclick="closeLabModal()" class="absolute top-5 right-6 text-3xl text-blue-300 hover:text-blue-600 font-bold leading-none">&times;</button>
+                <div id="modal-icon" class="text-6xl mb-4 text-center"></div>
+                <h3 id="modal-title" class="text-3xl text-blue-900 mb-3 text-center"></h3>
+                <p id="modal-desc" class="text-blue-700 font-medium leading-relaxed mb-4 text-center"></p>
+                <ul id="modal-details" class="space-y-2 mb-8"></ul>
+                <!--<button onclick="showView('events'); closeLabModal()" class="w-full bg-yellow-400 text-yellow-900 px-8 py-4 rounded-2xl font-bold text-lg btn-pop shadow-xl">Book This Programme</button>-->
+            </div>
+        </div>
 
         <!-- Gallery Teaser -->
         <section id="gallery" class="py-20 bg-blue-900 text-white">
@@ -307,6 +322,8 @@
 
     <script>
         // View Navigation Logic
+
+        //onclick="openLabModal('reading')"
         function showView(viewId) {
             const home = document.getElementById('home-view');
             const events = document.getElementById('events-view');
@@ -434,6 +451,68 @@
         canvas.addEventListener('mousedown', handleClick);
         canvas.addEventListener('touchstart', (e) => { e.preventDefault(); handleClick(e); });
         startBtn.addEventListener('click', startGame);
+
+        // Lab Modal Logic
+        const labData = {
+            puppet: {
+                icon: '🎭',
+                title: 'Papadi Park Puppet Shows',
+                desc: 'Curriculum-aligned puppet performances that bring learning to life through storytelling, song, and audience interaction.',
+                details: [
+                    '🎪 Live puppet show',
+                    '📖 Stories tied to your school curriculum',
+                    '👧 Suitable for Grades R – 7',
+                    '🏫 Available at your school or venue',
+                ]
+            },
+            pocket: {
+                icon: '💻',
+                title: 'Papadi Park Pocket Class',
+                desc: 'Bite-sized, one-on-one and small-group tutoring sessions designed to close learning gaps and spark a love of learning.',
+                details: [
+                    '📝 Fully curriculum-based content',
+                    '👩‍🏫 Qualified & passionate tutors',
+                    '🎮 Gamified lessons for better retention',
+                    '🏠 Virtual sessions available',
+                ]
+            },
+            reading: {
+                icon: '📚',
+                title: 'Papadi Park Reading Club',
+                desc: 'A warm, fun reading community where young learners build confidence, expand vocabulary, and discover a love of books.',
+                details: [
+                    '🗣️ Comprehension & fluency activities',
+                    '👫 Group sessions that build social skills',
+                    '🏆 Reading milestones & rewards',
+                    '🌟 Suitable for all learning abilities',
+                ]
+            }
+        };
+
+        function openLabModal(key) {
+            const data = labData[key];
+            document.getElementById('modal-icon').textContent = data.icon;
+            document.getElementById('modal-title').textContent = data.title;
+            document.getElementById('modal-desc').textContent = data.desc;
+            const list = document.getElementById('modal-details');
+            list.innerHTML = data.details.map(d =>
+                `<li class="flex items-start gap-2 text-blue-700 font-medium bg-blue-50 rounded-xl px-4 py-2">${d}</li>`
+            ).join('');
+            const modal = document.getElementById('lab-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeLabModal() {
+            const modal = document.getElementById('lab-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Close modal when clicking the backdrop
+        document.getElementById('lab-modal').addEventListener('click', function(e) {
+            if (e.target === this) closeLabModal();
+        });
     </script>
 </body>
 </html>
