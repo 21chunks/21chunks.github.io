@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papadi Park Puppet Shows - 21 Chunks</title>
+    <meta name="description" content="Papadi Park mobile puppet shows bring stories, laughter, imagination and learning to preschools, schools, restaurants, community events and birthday celebrations.">
+    <script src="https://cdn.tailwindcss.com"></script>
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FFD93D;
+            --secondary: #6BCB77;
+            --accent: #4D96FF;
+            --highlight: #FF6B6B;
+            --dark: #2B2B2B;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f0f7ff;
+            overflow-x: hidden;
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Fredoka One', cursive;
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 15px); }
+            100% { transform: translate(0, -0px); }
+        }
+
+        .bg-pattern {
+            background-color: #f0f7ff;
+            background-image: radial-gradient(#4D96FF 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .btn-pop {
+            transition: transform 0.1s active;
+            box-shadow: 0 6px 0 #b28e00;
+        }
+
+        .btn-pop:active {
+            transform: translateY(4px);
+            box-shadow: 0 2px 0 #b28e00;
+        }
+    </style>
+</head>
+<body class="bg-pattern min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto relative z-50">
+        <a href="/" class="flex items-center gap-3 cursor-pointer">
+            <div class="w-12 h-12 bg-yellow-400 rounded-xl rotate-12 flex items-center justify-center text-white text-2xl font-bold shadow-lg">21</div>
+            <span class="text-2xl font-bold tracking-tight text-blue-600">CHUNKS</span>
+        </a>
+        <div class="hidden md:flex gap-8 font-bold text-blue-500">
+            <a href="/#about" class="hover:text-yellow-500 transition-colors">About Us</a>
+            <a href="https://booking.21chunks.co.za" class="hover:text-yellow-500 transition-colors">Events</a>
+            <a href="/#lab" class="hover:text-yellow-500 transition-colors">The Lab</a>
+        </div>
+        <a href="/#game" class="bg-red-500 text-white px-6 py-2 rounded-full font-bold shadow-lg hover:bg-red-600 transition-all">Play Now!</a>
+    </nav>
+
+    <main class="py-12">
+        <div class="max-w-5xl mx-auto px-6">
+
+            <!-- Back -->
+            <div class="flex items-center gap-4 mb-10">
+                <a href="/#lab" class="bg-blue-100 text-blue-600 p-3 rounded-full hover:bg-blue-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </a>
+                <span class="font-bold text-blue-400">Back to The Refiner Lab</span>
+            </div>
+
+            <!-- Hero -->
+            <header class="flex flex-col md:flex-row items-center gap-10 mb-16">
+                <div class="md:w-3/5">
+                    <div class="inline-block bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm font-bold mb-4">
+                        🎭 PAPADI PARK PUPPET SHOWS
+                    </div>
+                    <h1 class="text-4xl md:text-5xl mb-6 leading-tight text-blue-900">
+                        Learning Through Laughter — <span class="text-yellow-500">Wherever Children Gather</span>
+                    </h1>
+                    <p class="text-xl text-blue-700 font-medium">
+                        At Papadi Park, we believe children learn best when they are having fun. Our puppet shows bring stories, laughter, imagination and learning directly to children in the spaces where they learn, play and celebrate.
+                    </p>
+                </div>
+                <div class="md:w-2/5 relative">
+                    <div class="floating relative z-10">
+                        <img src="/images/pic-care.png"
+                             alt="Papadi Park puppet show"
+                             class="rounded-[40px] shadow-2xl border-8 border-white rotate-3 w-full max-w-sm mx-auto">
+                    </div>
+                    <div class="absolute -bottom-8 -left-4 w-28 h-28 bg-yellow-400 rounded-full opacity-20 hidden md:block"></div>
+                </div>
+            </header>
+
+            <!-- Intro -->
+            <section class="bg-white rounded-[40px] shadow-xl p-8 md:p-12 mb-12">
+                <p class="text-lg text-blue-700 font-medium leading-relaxed mb-6">
+                    Our mobile puppet shows are specially designed for preschool and young primary-school children, combining engaging puppetry, storytelling, music, movement and audience participation with meaningful educational themes.
+                </p>
+                <p class="text-lg text-blue-700 font-medium leading-relaxed">
+                    Each show is created with young children in mind — keeping lessons simple, memorable and fun while supporting the work already being done by parents, teachers and schools.
+                </p>
+            </section>
+
+            <!-- More Than Entertainment -->
+            <section class="mb-12">
+                <h2 class="text-3xl md:text-4xl text-blue-900 mb-6">More Than Entertainment</h2>
+                <p class="text-lg text-blue-700 font-medium leading-relaxed mb-10">
+                    Our shows turn everyday lessons into experiences children can see, hear and participate in. From senses, animals, transport and healthy habits to friendship, kindness, safety, literacy and important life lessons, Papadi Park uses puppets to make big ideas easier for little minds to understand.
+                </p>
+
+                <h3 class="text-2xl text-blue-900 mb-6">We perform in a variety of settings</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-3xl shadow-xl p-6 border-b-8 border-blue-100">
+                        <div class="text-4xl mb-3">🏫</div>
+                        <p class="font-bold text-blue-900">Preschools and schools</p>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-xl p-6 border-b-8 border-yellow-200">
+                        <div class="text-4xl mb-3">🍽️</div>
+                        <p class="font-bold text-blue-900">Restaurants and family-friendly venues</p>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-xl p-6 border-b-8 border-green-200">
+                        <div class="text-4xl mb-3">🎪</div>
+                        <p class="font-bold text-blue-900">Community events</p>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-xl p-6 border-b-8 border-red-200">
+                        <div class="text-4xl mb-3">🎂</div>
+                        <p class="font-bold text-blue-900">Birthday celebrations</p>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-xl p-6 border-b-8 border-purple-200">
+                        <div class="text-4xl mb-3">🌟</div>
+                        <p class="font-bold text-blue-900">Children's events and special occasions</p>
+                    </div>
+                </div>
+
+                <p class="text-lg text-blue-700 font-medium leading-relaxed mt-10">
+                    Our mobile format allows Papadi Park to bring the experience to the children, making quality educational entertainment accessible wherever there is an audience ready to laugh, learn and play.
+                </p>
+            </section>
+
+            <!-- A Growing Experience -->
+            <section class="bg-blue-900 text-white rounded-[40px] shadow-2xl p-8 md:p-12 mb-12">
+                <h2 class="text-3xl md:text-4xl mb-6">A Growing Experience</h2>
+                <p class="text-lg font-medium leading-relaxed mb-6 text-blue-100">
+                    Papadi Park Friends is growing beyond individual performances into a family-focused ecosystem of learning, play, reading and memorable experiences. Our puppet shows remain at the heart of what we do — creating opportunities for children and families to connect through stories, characters and play.
+                </p>
+                <p class="text-lg font-medium leading-relaxed text-blue-100">
+                    Whether we arrive at a preschool, a family venue, a birthday party or another special space, the goal remains the same:
+                </p>
+            </section>
+
+            <!-- Pull quote -->
+            <section class="bg-yellow-50 border-l-8 border-yellow-400 rounded-[40px] p-8 md:p-12 mb-12 text-center">
+                <p class="text-2xl md:text-3xl text-yellow-700 leading-relaxed" style="font-family: 'Fredoka One', cursive;">
+                    Bring children together. Tell them great stories. Make them laugh. And leave them with something worth remembering.
+                </p>
+            </section>
+
+            <!-- CTA -->
+            <div class="text-center mb-8">
+                <a href="https://booking.21chunks.co.za" class="inline-block bg-yellow-400 text-yellow-900 px-10 py-5 rounded-2xl font-bold text-xl btn-pop shadow-xl">Book a Puppet Show</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="pb-12 pt-12 text-center text-blue-400 font-bold border-t border-blue-100 mt-12 bg-white">
+        <div class="flex justify-center gap-6 mb-4">
+            <span class="hover:text-blue-600 cursor-pointer">Facebook</span>
+            <span class="hover:text-blue-600 cursor-pointer">LinkedIn</span>
+            <span class="hover:text-blue-600 cursor-pointer">Instagram</span>
+        </div>
+        <p>© 2026 21 Chunks (Pty) Ltd - Refining Potential, One Event at a Time.</p>
+    </footer>
+</body>
+</html>
