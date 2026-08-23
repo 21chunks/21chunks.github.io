@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papadi Park Pocket Class - 21 Chunks</title>
+    <meta name="description" content="Papadi Park Pocket Class offers online homework help, tutoring and learning support, connecting children with a Papadi Park tutor through a simple digital experience.">
+    <script src="https://cdn.tailwindcss.com"></script>
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FFD93D;
+            --secondary: #6BCB77;
+            --accent: #4D96FF;
+            --highlight: #FF6B6B;
+            --dark: #2B2B2B;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f0f7ff;
+            overflow-x: hidden;
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Fredoka One', cursive;
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 15px); }
+            100% { transform: translate(0, -0px); }
+        }
+
+        .bg-pattern {
+            background-color: #f0f7ff;
+            background-image: radial-gradient(#4D96FF 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .btn-pop {
+            transition: transform 0.1s active;
+            box-shadow: 0 6px 0 #b28e00;
+        }
+
+        .btn-pop:active {
+            transform: translateY(4px);
+            box-shadow: 0 2px 0 #b28e00;
+        }
+    </style>
+</head>
+<body class="bg-pattern min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto relative z-50">
+        <a href="/" class="flex items-center gap-3 cursor-pointer">
+            <div class="w-12 h-12 bg-yellow-400 rounded-xl rotate-12 flex items-center justify-center text-white text-2xl font-bold shadow-lg">21</div>
+            <span class="text-2xl font-bold tracking-tight text-blue-600">CHUNKS</span>
+        </a>
+        <div class="hidden md:flex gap-8 font-bold text-blue-500">
+            <a href="/#about" class="hover:text-yellow-500 transition-colors">About Us</a>
+            <a href="https://booking.21chunks.co.za" class="hover:text-yellow-500 transition-colors">Events</a>
+            <a href="/#lab" class="hover:text-yellow-500 transition-colors">The Lab</a>
+        </div>
+        <a href="/#game" class="bg-red-500 text-white px-6 py-2 rounded-full font-bold shadow-lg hover:bg-red-600 transition-all">Play Now!</a>
+    </nav>
+
+    <main class="py-12">
+        <div class="max-w-5xl mx-auto px-6">
+
+            <!-- Back -->
+            <div class="flex items-center gap-4 mb-10">
+                <a href="/#lab" class="bg-blue-100 text-blue-600 p-3 rounded-full hover:bg-blue-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </a>
+                <span class="font-bold text-blue-400">Back to The Papadi Lab</span>
+            </div>
+
+            <!-- Hero -->
+            <header class="flex flex-col md:flex-row items-center gap-10 mb-16">
+                <div class="md:w-3/5">
+                    <div class="inline-block bg-yellow-100 text-yellow-700 px-4 py-1 rounded-full text-sm font-bold mb-4">
+                        💻 PAPADI PARK POCKET CLASS
+                    </div>
+                    <h1 class="text-4xl md:text-5xl mb-6 leading-tight text-blue-900">
+                        Learning support that fits <span class="text-yellow-500">right in your pocket.</span>
+                    </h1>
+                    <p class="text-xl text-blue-700 font-medium">
+                        Papadi Park Pocket Class brings the learning support children need closer to home — through the devices already in their hands.
+                    </p>
+                </div>
+                <div class="md:w-2/5 relative">
+                    <div class="floating relative z-10">
+                        <img src="/images/pic-play.png"
+                             alt="Papadi Park Pocket Class"
+                             class="rounded-[40px] shadow-2xl border-8 border-white rotate-3 w-full max-w-sm mx-auto">
+                    </div>
+                    <div class="absolute -bottom-8 -left-4 w-28 h-28 bg-yellow-400 rounded-full opacity-20 hidden md:block"></div>
+                </div>
+            </header>
+
+            <!-- Intro -->
+            <section class="bg-white rounded-[40px] shadow-xl p-8 md:p-12 mb-12">
+                <p class="text-lg text-blue-700 font-medium leading-relaxed">
+                    Pocket Class provides online homework help, tutoring and learning support, connecting children with a Papadi Park tutor through a simple digital experience. Whether a child needs help understanding a difficult concept, working through homework, preparing for a test or simply gaining more confidence in a subject, Pocket Class gives them an opportunity to learn with guidance and encouragement.
+                </p>
+            </section>
+
+            <!-- What it offers -->
+            <section class="mb-12">
+                <h2 class="text-3xl md:text-4xl text-blue-900 mb-8">How Pocket Class helps</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-3xl shadow-xl p-6 border-b-8 border-blue-200">
+                        <div class="text-4xl mb-3">📝</div>
+                        <p class="font-bold text-blue-900">Homework help</p>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-xl p-6 border-b-8 border-yellow-200">
+                        <div class="text-4xl mb-3">👩‍🏫</div>
+                        <p class="font-bold text-blue-900">One-on-one tutoring</p>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-xl p-6 border-b-8 border-green-200">
+                        <div class="text-4xl mb-3">📚</div>
+                        <p class="font-bold text-blue-900">Test &amp; exam preparation</p>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-xl p-6 border-b-8 border-red-200">
+                        <div class="text-4xl mb-3">🌟</div>
+                        <p class="font-bold text-blue-900">Subject confidence</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The name -->
+            <section class="bg-blue-900 text-white rounded-[40px] shadow-2xl p-8 md:p-12 mb-12">
+                <h2 class="text-3xl md:text-4xl mb-6">A classroom without walls</h2>
+                <p class="text-lg font-medium leading-relaxed mb-6 text-blue-100">
+                    The name “Pocket Class” reflects the way we learn today: the classroom no longer has to be a physical place. With a phone, tablet or computer, meaningful learning can happen wherever the child is.
+                </p>
+                <p class="text-lg font-medium leading-relaxed text-blue-100">
+                    Just like Papadi Park’s other educational services, Pocket Class is built around our belief that children learn best when learning feels approachable, engaging and supportive.
+                </p>
+            </section>
+
+            <!-- Growing -->
+            <section class="bg-yellow-50 border-l-8 border-yellow-400 rounded-[40px] p-8 md:p-12 mb-12">
+                <div class="flex items-start gap-6">
+                    <div class="text-5xl hidden sm:block">🚀</div>
+                    <p class="text-lg text-yellow-800 font-medium leading-relaxed">
+                        From individual homework assistance to tutoring and future learning programmes, Papadi Park Pocket Class is designed to grow alongside the needs of children and families.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Pull quote -->
+            <section class="text-center mb-12">
+                <p class="text-2xl md:text-3xl text-blue-900 leading-relaxed" style="font-family: 'Fredoka One', cursive;">
+                    Papadi Park Pocket Class — <span class="text-yellow-500">a little classroom, right in your pocket.</span>
+                </p>
+            </section>
+
+            <!-- CTA (hidden for now)
+            <div class="text-center mb-8">
+                <a href="https://booking.21chunks.co.za" class="inline-block bg-yellow-400 text-yellow-900 px-10 py-5 rounded-2xl font-bold text-xl btn-pop shadow-xl">Book a Pocket Class</a>
+            </div>
+            -->
+        </div>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="pb-12 pt-12 text-center text-blue-400 font-bold border-t border-blue-100 mt-12 bg-white">
+        <div class="flex justify-center gap-6 mb-4">
+            <span class="hover:text-blue-600 cursor-pointer">Facebook</span>
+            <span class="hover:text-blue-600 cursor-pointer">LinkedIn</span>
+            <span class="hover:text-blue-600 cursor-pointer">Instagram</span>
+        </div>
+        <p>© 2026 21 Chunks (Pty) Ltd - Refining Potential, One Event at a Time.</p>
+    </footer>
+</body>
+</html>
